@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Saira:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Don Graffiti';
+    src: url('../fontss/DonGraffiti.otf') format('opentype'),
+            }
+
+
+:root {
+    --cor01:#d52f17;
+    --cor02:#869daa;
+    --cor03:#1a2040;
+    --cor04:#d9c49c;
+    --cor05:#8c512e;
+
+    --cor06:#dc4d2d;
+    --cor07:#cb4325;
+    --cor08:#c22a26;
+
+    --cor09:#592918;
+    --cor10:#473830;
+    --cor11:#d0bf9cc7;
+    --cor12:#a66f3f;
+
+    --cor13:#688ea6;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-lacquer: 'Lacquer';
+    --fonte-dongraffiti: 'Don Graffiti';
+     }
+*{
+        margin: 0px;
+        padding: 0px;
+    }
+body {
+    background-color: #d0bf9cc7;
+    font-family: var(--fonte-padrao);
+    
+}
+a.externo:after {
+    content:'\1f517';
+
+}
+header {
+    
+    background-image: linear-gradient(to bottom, var(--cor11), var(--cor12));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+header > h1 {
+    color: #6a3c22;
+    font-family: var(--fonte-dongraffiti) , times, serif;
+    font-size: 6.5em;
+    margin-top: 20px;
+    
+    text-shadow: 5px 4px 0px rgba(8, 8, 8, 0.866);
+    
+}
+header > p {
+    font-family: var(--fonte-lacquer);
+    font-size: 1.5em;
+    color: #2f6079;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.223);
+
+    }
+nav {
+    background-color: var(--cor12);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.212);
+}
+nav > a {
+    color: var(--cor09);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    
+}
+nav > a:hover {
+    background-color: var(--cor04);
+    color: var(--cor12);
+}
+main {
+
+    min-width: 100px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.416);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+main h1 {
+    color: var(--cor06);
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    font-weight: bold;
+    
+}
+main h2 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor05);
+    font-size: 2em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor04), transparent);
+    /* #5893b1 azul marinho
+    */
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main strong {
+    color: var(--cor05);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor09);
+    background-color: var(--cor11);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+}
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor01);
+    margin-bottom: 30px;
+    margin: 0px -4px 30px -4px;
+    padding-bottom: 58%;
+
+    position: relative;
+
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: #688ea67a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.405);
+}
+aside > h3 {
+    background-color: var(--cor05);
+    color: var(--cor11);
+    font-family: var(--fonte-saira);
+    font-size: 1,5em;
+    padding: 8px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    /* 00A0 significa espaço sem quebra*/
+    list-style-position: inside;
+    /* lista grande: colums:2;
+    */
+}
+footer {
+    background-color: var(--cor10);
+    color: #a66f3f;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 5px;
+}
+footer > p > a {
+    color: var(--cor11);
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #688ea6;
+}
