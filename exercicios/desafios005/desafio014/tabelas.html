@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
-    <style>
-        body{
+   <style>
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
+            width: 500px;
             border-collapse: collapse;
         }
         caption {
             font-size: 1.3em;
-            font-weight: bold;
-            padding: 10px;
+            font-weight: bolder;
+            padding: 8px;
         }
         th, td {
-            border: 1px solid gray;
-            padding: 10px;
+            border: 1px solid black;
+            padding: 8px;
         }
     </style>
 
@@ -29,16 +30,16 @@
             <tr>
                 <th scope="col">Áreas</th>
                 <th scope="col">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th scope="col">Nota 1</th>
-                <th scope="col">Nota 2</th>
+                <th colspan="2" >Notas</th>
+                <th scope="colgroup">Nota 1</th>
+                <th scope="colgroup">Nota 2</th>
                 <th scope="col">Média</th>
             </tr>
             
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3" scope="rowgroup">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -57,7 +58,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Biologia</th>
+                <th >Biologia</th>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
